@@ -14,10 +14,10 @@ public class Main2Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
-
         ButtonEnviar = (Button)findViewById(R.id.ButtonEnviar);
         editNombre = (EditText)findViewById(R.id.EditNombre);
         editApellido = (EditText)findViewById(R.id.EditApellido);
+        editcorreo = (EditText)findViewById(R.id.EditCorreo);
 
         ButtonEnviar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -31,21 +31,15 @@ public class Main2Activity extends AppCompatActivity {
                 Intent intent2 = new Intent(Main2Activity.this,Main3Activity.class);
                 intent.putExtra("Apellido",apellido);
 
-
-
-
-
+                String correo = editcorreo.getText().toString();
+                Intent intent3 = new Intent(Main2Activity.this,Main3Activity.class);
+                intent.putExtra("Correo",correo);
 
                 startActivity(intent);
 
             }
         });
-
-
     }
-
-
     Button ButtonEnviar;
-    EditText editNombre , editApellido;
-
+    EditText editNombre , editApellido, editcorreo;
 }

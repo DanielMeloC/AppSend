@@ -20,11 +20,8 @@ public class MainActivity extends AppCompatActivity {
 
                 Intent next = new Intent(MainActivity.this,Main2Activity.class);
                 startActivity(next);
-
             }
         });
     }
-
     Button next;
-
 }

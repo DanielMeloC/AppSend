@@ -11,7 +11,8 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:weightSum="1">
 
         <TextView
             android:id="@+id/textView3"
@@ -20,9 +21,9 @@
             android:layout_margin="12dp"
             android:fontFamily="cursive"
             android:gravity="center_vertical"
-            android:text="Welcome!"
-            android:paddingLeft="115dp"
+            android:paddingLeft="87dp"
             android:paddingTop="45dp"
+            android:text="Bienvenido"
             android:textColor="?attr/actionModeSplitBackground"
             android:textSize="46sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -31,19 +32,30 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.138" />
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="125dp"
+            android:layout_height="95dp"
+            android:layout_marginLeft="125dp"
+            app:srcCompat="@drawable/hombre"
+            android:layout_weight="0.92" />
+
 
     </LinearLayout>
+
+
 
     <Button
         android:id="@+id/ButtonInscripcion"
         android:layout_width="125dp"
-        android:layout_height="wrap_content"
+        android:layout_height="45dp"
         android:layout_margin="130dp"
-        android:text="Inscription"
+        android:text="Inscripción"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
         app:layout_constraintVertical_bias="0.822"
         tools:layout_editor_absoluteX="-124dp" />
+
 
 </LinearLayout>
 

@@ -14,6 +14,7 @@ public class Main3Activity extends AppCompatActivity {
 
         textNombre = (TextView) findViewById(R.id.NombreShow);
         textApellido = (TextView) findViewById(R.id.ApellidoShow);
+        textCorreo = (TextView) findViewById(R.id.correoShow);
 
         Intent intent = getIntent();
         Bundle extras = intent.getExtras();
@@ -26,11 +27,10 @@ public class Main3Activity extends AppCompatActivity {
             String  apellido = extras.getString("Apellido");
             textApellido.setText(apellido);
 
+            String  correo = extras.getString("Correo");
+            textCorreo.setText(correo);
 
         }
-
     }
-
-    TextView textNombre,textApellido;
-
+    TextView textNombre,textApellido,textCorreo;
 }
